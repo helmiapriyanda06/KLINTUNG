@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.KLINTUNG." parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.Klintung" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/orange</item>
         <item name="colorPrimaryVariant">@color/orange</item>
@@ -14,13 +14,13 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="Theme.KLINTUNG.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="Theme.Klintung.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
-    <style name="Theme.KLINTUNG.NoActionBar">
+    <style name="Theme.Klintung.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="Theme.KLINTUNG.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.Klintung.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
 </resources>
