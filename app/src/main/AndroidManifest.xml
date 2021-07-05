@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.helmi_18104036.klintung" >
+    package="com.helmi_18104036.klintung">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -13,8 +13,12 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Klintung>
-        <activity android:name=".MainActivity" >
+        android:theme="@style/Theme.Klintung">
+        <activity
+            android:name=".DetailActivity"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/Theme.Klintung.NoActionBar"></activity>
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
