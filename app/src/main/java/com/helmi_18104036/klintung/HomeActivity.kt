@@ -1,10 +1,14 @@
 package com.helmi_18104036.klintung
 
+import android.app.Notification.EXTRA_TITLE
 import android.content.Intent
+import android.content.Intent.EXTRA_TITLE
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
+import com.helmi_18104036.klintung.fragment.AboutFragment
+import com.helmi_18104036.klintung.utils.SettingPreference
 import kotlinx.android.synthetic.main.activity_home.*
 
 class HomeActivity : AppCompatActivity() {

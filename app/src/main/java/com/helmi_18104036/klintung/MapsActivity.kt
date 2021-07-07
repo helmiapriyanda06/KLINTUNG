@@ -1,7 +1,9 @@
 package com.helmi_18104036.klintung
 
+import android.app.Activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Parcelable
 
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
@@ -10,39 +12,43 @@ import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 import com.helmi_18104036.klintung.databinding.ActivityMapsBinding
+import com.helmi_18104036.klintung.model.DataModel
 
 class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
+    companion object{
+        const val EXTRA_DATA = "extra_data"
+    }
+
+    val myData by getParcelableExtra<DataModel>(DetailActivity.EXTRA_DATA)
+    inline fun <reified T : Parcelable> Activity.getParcelableExtra(key: String) = lazy {
+        intent.getParcelableExtra<T>(key)
+    }
 
     private lateinit var mMap: GoogleMap
-    private lateinit var binding: ActivityMapsBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        binding = ActivityMapsBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
-        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
+        setContentView(R.layout.activity_maps)
         val mapFragment = supportFragmentManager
             .findFragmentById(R.id.map) as SupportMapFragment
         mapFragment.getMapAsync(this)
+        supportActionBar?.title = myData?.title.toString()
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
 
-    /**
-     * Manipulates the map once available.
-     * This callback is triggered when the map is ready to be used.
-     * This is where we can add markers or lines, add listeners or move the camera. In this case,
-     * we just add a marker near Sydney, Australia.
-     * If Google Play services is not installed on the device, the user will be prompted to install
-     * it inside the SupportMapFragment. This method will only be triggered once the user has
-     * installed Google Play services and returned to the app.
-     */
+
     override fun onMapReady(googleMap: GoogleMap) {
         mMap = googleMap
+        val lat:Double = myData!!.lat.toDouble()
+        val lang:Double =myData!!.lang.toDouble()
 
-        // Add a marker in Sydney and move the camera
-        val sydney = LatLng(-34.0, 151.0)
-        mMap.addMarker(MarkerOptions().position(sydney).title("Marker in Sydney"))
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney))
+        val latLng = LatLng(lat, lang)
+        mMap.addMarker(MarkerOptions().position(latLng).title(myData!!.title.toString()))
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, 16.0F))
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 }
