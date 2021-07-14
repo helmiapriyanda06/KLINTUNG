@@ -38,9 +38,9 @@ class AboutActivity : AppCompatActivity() {
         return true
     }
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        Log.d("SUPER","Purwpketo")
-        super.onActivityResult(requestCode, resultCode, data)
         Log.d("SUPER","Banyumas")
+        super.onActivityResult(requestCode, resultCode, data)
+        Log.d("SUPER","Purwokerto")
         if (resultCode == AboutFragment.RESULT_CODE){
             Log.d("THEME_DARK_IN_RESULT",isDarkTheme.toString())
             showPref()

@@ -57,9 +57,9 @@ class HomeActivity : AppCompatActivity() {
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        Log.d("SUPER","banyumas")
+        Log.d("SUPER","Banyumas")
         super.onActivityResult(requestCode, resultCode, data)
-        Log.d("SUPER","purwokerto")
+        Log.d("SUPER","Purwokerto")
         if (resultCode == AboutFragment.RESULT_CODE){
             Log.d("THEME_DARK_IN_RESULT",isDarkTheme.toString())
             showPref()
