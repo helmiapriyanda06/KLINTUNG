@@ -48,10 +48,7 @@ class HomeActivity : AppCompatActivity() {
             move.putExtra(ListActivity.EXTRA_TITLE,"Wisata")
             startActivity(move)
         }
-        btn_about.setOnClickListener {
-            val move = Intent(this,AboutActivity::class.java)
-            startActivity(move)
-        }
+
         mSettingPreference = SettingPreference(this)
         isDarkTheme = mSettingPreference.getSetting()
         showPref()
