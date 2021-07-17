@@ -7,13 +7,25 @@
     tools:context=".HomeActivity"
     android:background="@drawable/homeactivity">
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="373dp"
+        android:layout_height="156dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.605"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageButton
         android:id="@+id/img_home_wisata"
         android:layout_width="313dp"
         android:layout_height="141dp"
+        android:layout_marginTop="72dp"
         android:backgroundTint="@android:color/transparent"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.357"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img_home_kuliner"
         app:srcCompat="@drawable/group_1" />
@@ -28,6 +40,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.664"
         app:srcCompat="@drawable/group_3" />
 
     <ImageButton
@@ -38,6 +51,7 @@
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toTopOf="@+id/img_home_kuliner"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.357"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/group_2" />
 
@@ -45,13 +59,12 @@
         android:id="@+id/btn_about"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="324dp"
+        android:layout_marginEnd="12dp"
         android:backgroundTint="@android:color/transparent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_baseline_info_24" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

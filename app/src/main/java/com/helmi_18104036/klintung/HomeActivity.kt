@@ -7,6 +7,9 @@ import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.helmi_18104036.klintung.adapter.Horizontal_RecyclerView
 import com.helmi_18104036.klintung.fragment.AboutFragment
 import com.helmi_18104036.klintung.utils.SettingPreference
 import kotlinx.android.synthetic.main.activity_home.*
@@ -15,9 +18,18 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var mSettingPreference: SettingPreference
     private var isDarkTheme:Boolean = false
 
+    private lateinit var recyclerView: RecyclerView
+    private lateinit var adapter: Horizontal_RecyclerView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
+
+        recyclerView = findViewById(R.id.recyclerView)
+        adapter = Horizontal_RecyclerView(this)
+
+        recyclerView.layoutManager = LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false)
+        recyclerView.adapter = adapter
 
         img_home_penginapan.setOnClickListener{
             val move = Intent(this,ListActivity::class.java)
