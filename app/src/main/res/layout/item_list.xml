@@ -63,15 +63,6 @@
                 android:maxLines="5"
                 android:text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" />
 
-            <TextView
-                android:id="@+id/tv_description3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom|clip_horizontal|center|clip_vertical|start|right|center_horizontal|top|end"
-                android:layout_marginLeft="8dp"
-                android:ellipsize="end"
-                android:maxLines="5"
-                android:text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" />
         </LinearLayout>
 
     </LinearLayout>

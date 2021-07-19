@@ -32,15 +32,23 @@ object DataWisata{
         )
 
     private val description = arrayOf(
-        "Berada di lereng Gunung Slamet, wisata Pagubugan akan membawa Anda merasakan betapa\n" +
-                "tenang dan nyamannya berada di tengah persawahan dan bermain air di sungai. Eduwisata yang berada\n" +
-                "di Desa Melung ini memiliki berbagai spot wisata menarik yang akan memanjakan Anda. Mulai dari trek\n" +
-                "jogging, outbond, camping ground, sawah pelangi, taman kelinci, berbagai spot foto keren dan juga\n" +
-                "Grujugan Bengkok.Di Grujugan Bengkok ini Anda bisa mandi sepuasnya dan airnya sangat jernih, lho!\n" +
-                "Selain itu lintasan grujugan ini juga panjang, melewati persawahan dan tidak dalam, sehingga aman buat\n" +
-                "si kecil. Selain itu ada juga wisata bercocok tanam bagi anak paud, TK maupun SD yang berkunjung. Dan\n" +
+        "JAM BUKA 07.00 WIB - 17.00 WIB\n" +
+                "\n" +
+                "HARGA TIKET Rp.10.000\n" +
+                "\n" +
+                "Berada di lereng Gunung Slamet, wisata Pagubugan akan membawa Anda merasakan betapa" +
+                "tenang dan nyamannya berada di tengah persawahan dan bermain air di sungai. Eduwisata yang berada" +
+                "di Desa Melung ini memiliki berbagai spot wisata menarik yang akan memanjakan Anda. Mulai dari trek" +
+                "jogging, outbond, camping ground, sawah pelangi, taman kelinci, berbagai spot foto keren dan juga" +
+                "Grujugan Bengkok.Di Grujugan Bengkok ini Anda bisa mandi sepuasnya dan airnya sangat jernih, lho!" +
+                "Selain itu lintasan grujugan ini juga panjang, melewati persawahan dan tidak dalam, sehingga aman buat" +
+                "si kecil. Selain itu ada juga wisata bercocok tanam bagi anak paud, TK maupun SD yang berkunjung. Dan" +
                 "yang terbaru ada kolam renang di tengah persawahan yang aman untuk anak-anak.",
 
+        "JAM BUKA 08.00 WIB - 17.30 WIB\n" +
+                "\n" +
+                "HARGA TIKET Rp.25.000\n" +
+                "\n" +
         "Berlokasi tak terlalu jauh dengan pusat kota Purwokerto, The Village hadir dengan gaya unik\n" +
                 "khas perkampungan Eropa. Bangunan tinggi besar menyerupai kastil dengan dinding bata langsung\n" +
                 "mencuri perhatian begitu melangkahkan kaki ke sini. Ada beragam aktivitas yang bisa Anda lakukan di\n" +

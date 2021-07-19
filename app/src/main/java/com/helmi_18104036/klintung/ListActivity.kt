@@ -9,6 +9,8 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.helmi_18104036.klintung.adapter.ListDataAdapter
+import com.helmi_18104036.klintung.data.DataKuliner
+import com.helmi_18104036.klintung.data.DataPenginapan
 import com.helmi_18104036.klintung.data.DataWisata
 import com.helmi_18104036.klintung.model.DataModel
 import com.helmi_18104036.klintung.utils.SettingPreference
@@ -71,6 +73,12 @@ class ListActivity : AppCompatActivity() {
 
             "Wisata" ->{
                 list.addAll(DataWisata.listData)
+            }
+            "Kuliner" ->{
+                list.addAll(DataKuliner.listData)
+            }
+            "Penginapan" ->{
+                list.addAll(DataPenginapan.listData)
             }
         }
     }

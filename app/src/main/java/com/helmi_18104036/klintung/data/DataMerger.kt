@@ -7,6 +7,7 @@ object DataMerger {
         val listData = ArrayList<DataModel>()
         listData.addAll(DataKuliner.listData)
         listData.addAll(DataWisata.listData)
+        listData.addAll(DataPenginapan.listData)
         return listData
     }
 }
